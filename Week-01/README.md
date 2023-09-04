@@ -1,4 +1,6 @@
-# Week 1 
+## Laporan Praktikum
+
+## Week 1 
 
 ```sh
 Wildan Hafidz Mauludin
@@ -8,7 +10,7 @@ Wildan Hafidz Mauludin
 2141720007
 ```
 
-# Source Code
+### Source Code
 
 ```dart
 void main() {
@@ -16,6 +18,6 @@ void main() {
 }
 ```
 
-# Output
+### Output
 
-![Output](output.png)
+![Output](docs/output.png)
