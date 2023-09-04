@@ -10,7 +10,7 @@ Wildan Hafidz Mauludin
 2141720007
 ```
 
-## 1. Memodifikasi kode menjadi output yang diminta
+### 1. Memodifikasi kode menjadi output yang diminta
 
 ### Source Code
 
@@ -26,13 +26,13 @@ void main() {
 
 ![Output](docs/output.png)
 
-## 2. Mengapa sangat penting untuk memahami bahasa pemrograman Dart sebelum kita menggunakan framework Flutter? Jelaskan!
+### 2. Mengapa sangat penting untuk memahami bahasa pemrograman Dart sebelum kita menggunakan framework Flutter? Jelaskan!
 
 ### Jawab
 
 Pemahaman bahasa pemrograman Dart sangat penting sebelum menggunakan framework Flutter karena Dart adalah bahasa pemrograman utama yang digunakan dalam pengembangan aplikasi Flutter.
 
-## 3. Rangkumlah materi dari codelab ini menjadi poin-poin penting yang dapat Anda gunakan untuk membantu proses pengembangan aplikasi mobile menggunakan framework Flutter.
+### 3. Rangkumlah materi dari codelab ini menjadi poin-poin penting yang dapat Anda gunakan untuk membantu proses pengembangan aplikasi mobile menggunakan framework Flutter.
 
 ### Jawab
 
