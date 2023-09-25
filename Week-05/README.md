@@ -486,7 +486,7 @@ Result:
 
 Jawab:
 
-https://github.com/nikoshaa/2141720007-mobile-2023/tree/main/Week-05
+<https://github.com/nikoshaa/namer_app>
 
 4. README md berisi: capture hasil akhir tiap praktikum (side-by-side, bisa juga berupa file GIF agar terlihat proses perubahan ketika ada aksi dari pengguna) di browser dan perangkat fisik (device) dengan menampilkan NIM dan Nama Anda sebagai ciri pekerjaan Anda. Jika mode developer di perangkat HP Anda belum aktif, silakan cari di internet cara mengaktifkannya!
 
