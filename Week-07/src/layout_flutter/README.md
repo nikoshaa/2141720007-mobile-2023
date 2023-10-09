@@ -14,7 +14,7 @@ Wildan Hafidz Mauludin
 - [Praktikum 4: Implementasi Image Section](#praktikum-4-implementasi-image-section)
 - [Tugas Praktikum](#tugas-praktikum)
 
-##### Praktikum 1: Membangun Layout di Flutter
+#### Praktikum 1: Membangun Layout di Flutter
 
 **Langkah 1: Buat Project Baru**
 
