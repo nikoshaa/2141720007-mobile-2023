@@ -1,10 +1,22 @@
-**Week 7**
+### Week 7
 
-**Layout dan Navigasi**
+### Layout dan Navigasi
 
 Wildan Hafidz Mauludin
 
 2141720007
+
+### Tugas Praktikum
+
+1. Selesaikan Praktikum 1 sampai 4, lalu dokumentasikan dan push ke repository Anda berupa screenshot setiap hasil pekerjaan beserta penjelasannya di file README.md
+
+2. Silakan implementasikan di project baru **"basic_layout_flutter"** dengan mengakses sumber ini: <https://docs.flutter.dev/codelabs/layout-basics>
+
+**Answer**
+
+### Jobsheet Layout Flutter Praktikum 1 sampai 4
+
+[Jobsheet 07 - Layout dan Navigasi](https://jti-polinema.github.io/flutter-codelab/07-layout-navigasi/#0)
 
 **Table of Content**
 
@@ -12,9 +24,9 @@ Wildan Hafidz Mauludin
 - [Praktikum 2: Implementasi Button Row](#praktikum-2-implementasi-button-row)
 - [Praktikum 3: Implementasi Text Section](#praktikum-3-implementasi-text-section)
 - [Praktikum 4: Implementasi Image Section](#praktikum-4-implementasi-image-section)
-- [Tugas Praktikum](#tugas-praktikum)
+- [Jobsheet Codelabs Basic Flutter Layout](#jobsheet-codelabs-layout-basics)
 
-#### Praktikum 1: Membangun Layout di Flutter
+### Praktikum 1: Membangun Layout di Flutter
 
 **Langkah 1: Buat Project Baru**
 
@@ -196,7 +208,7 @@ Widget titleSection = Container(
 
 ![Output](docs/practice/practice-1/implementation_title_row.png)
 
-##### Praktikum 2: Implementasi Button Row
+### Praktikum 2: Implementasi Button Row
 
 Selesaikan langkah-langkah praktikum berikut ini dengan melanjutkan dari praktikum sebelumnya.
 
@@ -533,7 +545,7 @@ class MainApp extends StatelessWidget {
 
 ![Output](docs/practice/practice-2/implementation_button_row.png)
 
-##### Praktikum 3: Implementasi text section
+### Praktikum 3: Implementasi text section
 
 Selesaikan langkah-langkah praktikum berikut ini dengan melanjutkan dari praktikum sebelumnya.
 
@@ -602,7 +614,7 @@ return MaterialApp(
 
 ![Output](docs/practice/practice-3/implementation_text_section.png)
 
-##### Praktikum 4: Implementasi Image Section
+### Praktikum 4: Implementasi Image Section
 
 Selesaikan langkah-langkah praktikum berikut ini dengan melanjutkan dari praktikum sebelumnya.
 
@@ -693,16 +705,118 @@ Pada langkah terakhir ini, atur semua elemen dalam `ListView`, bukan Column, kar
 
 ![Output](docs/practice/practice-4/implementation_image_section.png)
 
-##### Tugas Praktikum
+### Jobsheet Codelabs Layout Basics
 
-1. Selesaikan Praktikum 1 sampai 4, lalu dokumentasikan dan push ke repository Anda berupa screenshot setiap hasil pekerjaan beserta penjelasannya di file README.md
+[Jobsheet 07 - Codelabs Layout Basics](https://docs.flutter.dev/codelabs/layout-basics)
 
-**Answer**
+**Axis Size and Alignment**
 
-2. Silakan implementasikan di project baru **"basic_layout_flutter"** dengan mengakses sumber ini: <https://docs.flutter.dev/codelabs/layout-basics>
+**Main Axis Size**
 
-**Answer**
+Menentukan seberapa banyak ruang yang bisa digunakan oleh component.
 
-3. Kumpulkan link commit repository GitHub Anda ke spreadsheet yang telah disediakan!
+_Max_
 
-**Answer**
+![Output](docs/basic/max.png)
+
+_Min_
+
+![Output](docs/basic/min.png)
+
+**Main Axis Alignment**
+
+Menentukan bagaimana posisi berada component.
+
+_start_
+
+![Output](docs/basic/start.png)
+
+_end_
+
+![Output](docs/basic/end.png)
+
+**Cross Axis Alignment**
+
+Menentukan bagaimana posisi berada component pada posisi bersilangan.
+
+_center_
+
+![Output](docs/basic/center.png)
+
+_start_
+
+![Output](docs/basic/start1.png)
+
+**Flexible Widget**
+
+Digunakan untuk memberikan fleksibilitas kepada children terhadap parent widget.
+
+- Tidak menggunakan Flexible untuk kotak ke-1
+
+- FlexFix.tight untuk kotak ke-2
+
+- FlexFit.loose untuk kotak ke-3
+
+![Output](docs/basic/flex.png)
+
+**Expanded Widget**
+
+Digunakan untuk memberikan fleksibilitas kepada children untuk mengisi ruang pada parent.
+
+- Kotak ke-1 dan ke-2 tidak menggunakan widget Expanded
+
+- Kotak ke-3 menggunakan widget Expanded
+
+![Output](docs/basic/exp.png)
+
+**SizedBox Widget**
+
+Digunakan untuk memberikan ukuran widget yang sesuai dengan lebar dan tinggi yang telah ditentukan.
+
+- Kotak ke-1 dan ke-2 tidak menggunakan widget SizedBox
+
+- Kotak ke-3 menggunakan widget SizedBox
+
+![Output](docs/basic/sizedbox.png)
+
+- SizedBox juga digunakan untuk memberikan space antar widget
+
+![Output](docs/basic/sizedboxspace.png)
+
+**Text Widget**
+
+Digunakan untuk menampilkan text
+
+- Menampilkan text dengan berbagai opsi seperti fon family, font size, dan color
+
+![Output](docs/basic/textwidget.png)
+
+**Icon Widget**
+
+Digunakan untuk menampilkan icon
+
+- Menampilkan icon dengan opsi jenis icon, ukuran, dan warna
+
+![Output](docs/basic/iconwidget.png)
+
+**Image Widget**
+
+Digunakan untuk menampilkan gambar
+
+- Jika gambar tidak berhasil di load
+
+![Output](docs/basic/not.png)
+
+- Jika gambar berhasil di load
+
+![Output](docs/basic/yes.png)
+
+**Putting It All Together**
+
+Membuat layout seperti ini
+
+![Output](docs/basic/putting.png)
+
+**Result**
+
+![Output](docs/basic/result.png)
