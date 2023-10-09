@@ -48,7 +48,6 @@ Dart memiliki alat yang produktif dan sistem garbage collection yang efisien.
 ### 3. Evolusi Dart:
 Dart diluncurkan pada tahun 2011 dan mengalami perkembangan signifikan.
 Dart awalnya fokus pada pengembangan web, tetapi kemudian berfokus pada pengembangan seluler, terutama dengan Flutter.
-Dart menawarkan performa terbaik dan alat yang baik untuk proyek berskala besar.
 
 ### 4. Cara Eksekusi Kode Dart:
 Kode Dart dapat dieksekusi melalui Dart VM (Just-In-Time atau Ahead-Of-Time) atau kompilasi menjadi JavaScript.
