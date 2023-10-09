@@ -1,6 +1,6 @@
 ## Laporan Praktikum
 
-## Week 1 
+## Week 1
 
 ```sh
 Wildan Hafidz Mauludin
