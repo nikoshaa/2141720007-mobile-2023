@@ -162,6 +162,350 @@ https://docs.flutter.dev/cookbook/navigation/hero-animations
 
 6. Selesaikan Praktikum Navigasi dan Rute tersebut, lalu dokumentasikan dan push ke repository Anda berupa screenshot setiap hasil pekerjaan beserta penjelasannya di file `README.md`. Kumpulkan link commit repository GitHub Anda ke spreadsheet yang telah disediakan!
 
+**Answer**
+
+**Source Code item.dart**
+
+```dart
+class Item {
+  String name, imageUrl;
+  int price, sold;
+  double rating;
+
+  Item(
+      {required this.name,
+      required this.price,
+      required this.imageUrl,
+      required this.sold,
+      required this.rating});
+}
+```
+
+**Source Code home_page.dart**
+
+```dart
+import 'package:belanja/models/item.dart';
+import 'package:flutter/material.dart';
+import 'package:belanja/widgets/card_widget.dart';
+import 'package:belanja/widgets/bottom_widget.dart';
+
+class HomePage extends StatelessWidget {
+  final List<Item> items = [
+    Item(
+        name: 'Gula',
+        price: 14500,
+        imageUrl: 'assets/sugar.jpg',
+        sold: 47,
+        rating: 5.0),
+    Item(
+        name: 'Garam',
+        price: 6690,
+        imageUrl: 'assets/salt.jpg',
+        sold: 51,
+        rating: 4.0),
+    Item(
+        name: 'Coffee',
+        price: 67490,
+        imageUrl: 'assets/coffee.jpg',
+        sold: 23,
+        rating: 4.1),
+    Item(
+        name: 'Kripik',
+        price: 6490,
+        imageUrl: 'assets/kripik.jpg',
+        sold: 34,
+        rating: 4.6),
+    Item(
+        name: 'Kecap',
+        price: 12390,
+        imageUrl: 'assets/lada.jpg',
+        sold: 16,
+        rating: 4.6),
+    Item(
+        name: 'Susu',
+        price: 17970,
+        imageUrl: 'assets/milk.jpg',
+        sold: 26,
+        rating: 5.0),
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+        appBar: AppBar(
+          title: const Text('Shopping List'),
+        ),
+        body: CardWidget(items: items),
+        bottomNavigationBar: const BottomWidget());
+  }
+}
+```
+
+**Source Code item_page.dart**
+
+```dart
+import 'package:belanja/widgets/detailsItem_widget.dart';
+import 'package:flutter/material.dart';
+
+class ItemPage extends StatelessWidget {
+  const ItemPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Item Details'),
+      ),
+      body: const DetailsItem(),
+    );
+  }
+}
+```
+
+**Source Code bottom_widget.dart**
+
+```dart
+import 'package:flutter/material.dart';
+
+class BottomWidget extends StatelessWidget {
+  const BottomWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return BottomAppBar(
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: const BoxDecoration(
+          color: Colors.blue,
+        ),
+        child: const Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(
+              'Wildan Hafidz Mauludin',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+              ),
+            ),
+            Text(
+              '2141720007',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+```
+
+**Source Code card_widget.dart**
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:belanja/models/item.dart';
+
+class CardWidget extends StatelessWidget {
+  // const CardWidget({super.key});
+  final List<Item> items;
+
+  const CardWidget({required this.items});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: GridView.builder(
+        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2, // Menampilkan 2 item per baris
+          childAspectRatio: 0.7, // Mengatur rasio lebar-tinggi item
+        ),
+        itemCount: items.length,
+        itemBuilder: (context, index) {
+          final item = items[index];
+          return ItemCard(item: item, context: context);
+        },
+      ),
+    );
+  }
+}
+
+class ItemCard extends StatelessWidget {
+  final Item item;
+  final BuildContext context;
+
+  const ItemCard({required this.item, required this.context});
+
+  @override
+  Widget build(BuildContext context) {
+    return InkWell(
+      onTap: () {
+        Navigator.pushNamed(context, '/item', arguments: item);
+      },
+      child: Card(
+        child: Padding(
+          padding: const EdgeInsets.all(
+              8), // Tambahkan padding pada keseluruhan Card
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Hero(
+                tag: 'productImage${item.name}',
+                child: AspectRatio(
+                  aspectRatio:
+                      1, // Rasio lebar-tinggi 1:1 untuk ukuran yang sama
+                  child: Image.asset(item.imageUrl, fit: BoxFit.cover),
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment
+                    .spaceBetween, // Agar rating berada di sebelah kanan
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(
+                        top: 8), // Padding di atas teks "name"
+                    child: Text(
+                      item.name,
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16,
+                      ),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      const Icon(Icons.star, color: Colors.amber),
+                      Text(
+                        item.rating.toString(),
+                        style: const TextStyle(
+                          color: Colors.amber,
+                          fontSize: 14,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 8),
+                child: Text(
+                  'Rp. ${item.price}',
+                  style: const TextStyle(
+                    color: Colors.deepOrange,
+                    fontSize: 14,
+                  ),
+                ),
+              ),
+              Text(
+                'Stok: ${item.sold}',
+                style: const TextStyle(
+                  color: Colors.grey,
+                  fontSize: 14,
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+```
+
+**Source Code detailsItem_widget.dart**
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:belanja/models/item.dart';
+
+class DetailsItem extends StatelessWidget {
+  const DetailsItem({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final itemArgs = ModalRoute.of(context)!.settings.arguments as Item;
+    return Scaffold(
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Hero(
+              tag: 'productImage${itemArgs.name}',
+              child: Image.asset(itemArgs.imageUrl),
+            ),
+            const SizedBox(
+                height: 16), // Tambahkan jarak antara gambar dan teks
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  '${itemArgs.name}',
+                  style: const TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24,
+                  ),
+                ),
+                Row(
+                  children: [
+                    const Icon(Icons.star, color: Colors.amber),
+                    Text(
+                      itemArgs.rating.toString(),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+            const SizedBox(height: 8), // Tambahkan jarak antara nama dan harga
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Rp. ${itemArgs.price}',
+                  style: const TextStyle(
+                    color: Colors.deepOrange,
+                    fontSize: 20,
+                  ),
+                ),
+                Text(
+                  'Stok: ${itemArgs.sold}',
+                  style: const TextStyle(
+                    color: Colors.grey,
+                    fontSize: 16,
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+```
+
+**Source Code main.dart**
+
+```dart
+import 'package:belanja/pages/home_page.dart';
+import 'package:belanja/pages/item_page.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
+    initialRoute: '/',
+    routes: {
+      '/': (context) => HomePage(),
+      '/item': (context) => const ItemPage(),
+    },
+  ));
+}
+```
+
 **Output Tugas**
 
 ![screen.gif](docs/task/result_task.gif)
