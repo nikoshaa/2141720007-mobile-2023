@@ -130,7 +130,7 @@ return InkWell(
 )
 ```
 
-Jalankan aplikasi kembali dan pastikan ListView dapat disentuh dan berpindah ke halaman berikutnya. Periksa kembali jika terdapat kesalahan.
+Jalankan aplikasi kembali dan pastikan `ListView` dapat disentuh dan berpindah ke halaman berikutnya. Periksa kembali jika terdapat kesalahan.
 
 **Output Praktikum**
 
