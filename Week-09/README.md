@@ -124,36 +124,44 @@ Container(
 
 **Answer**
 
-_Langkah 2 pada praktikum tersebut adalah menambahkan plugin auto_size_text pada pubspec.yaml. Plugin ini digunakan untuk mengatur ukuran teks secara otomatis sesuai dengan ukuran widget yang digunakan._
+Langkah 2 pada praktikum tersebut menambahkan plugin `auto_size_text` pada `pubspec.yaml`
+
+Plugin ini digunakan untuk mengatur ukuran teks secara otomatis sesuai dengan ukuran `widget` yang digunakan.
 
 2. Jelaskan maksud dari langkah 5 pada praktikum tersebut!
 
 **Answer**
 
-_Langkah 5 pada praktikum tersebut adalah menambahkan variable text pada class RedTextWidget. Variable text ini digunakan untuk menampung teks yang akan ditampilkan pada widget._
+Langkah 5 pada praktikum tersebut menambahkan variable text pada class `RedTextWidget`
+
+Variable text ini digunakan untuk menampung teks yang akan ditampilkan pada `widget`
 
 3. Pada langkah 6 terdapat dua widget yang ditambahkan, jelaskan fungsi dan perbedaannya!
 
 **Answer**
 
-_Pada langkah 6 terdapat dua widget yang ditambahkan yaitu AutoSizeText dan Text. Kedua widget ini digunakan untuk menampilkan teks pada widget. Perbedaannya adalah AutoSizeText digunakan untuk mengatur ukuran teks secara otomatis sesuai dengan ukuran widget yang digunakan, sedangkan Text tidak mengatur ukuran teks secara otomatis._
+Pada langkah 6 terdapat dua widget yang ditambahkan yaitu `AutoSizeText` dan `Text`
+
+Kedua `widget` ini digunakan untuk menampilkan teks pada widget
+
+Perbedaannya adalah `AutoSizeText` digunakan untuk mengatur ukuran teks secara otomatis sesuai dengan ukuran widget yang digunakan, sedangkan `Text` tidak mengatur ukuran teks secara otomatis
 
 4. Jelaskan maksud dari tiap parameter yang ada di dalam plugin auto_size_text berdasarkan tautan pada dokumentasi!
 
 **Answer**
 
-- text: Teks yang akan ditampilkan pada widget.
-- style: Style teks yang akan ditampilkan pada widget.
-- maxLines: Jumlah maksimal baris yang akan ditampilkan pada widget.
-- overflow: Teks yang akan ditampilkan jika melebihi jumlah maksimal baris yang ditampilkan pada widget.
-- minFontSize: Ukuran minimal teks yang akan ditampilkan pada widget.
-- maxFontSize: Ukuran maksimal teks yang akan ditampilkan pada widget.
-- stepGranularity: Ukuran langkah yang digunakan untuk mengatur ukuran teks pada widget.
-- presetFontSizes: Ukuran teks yang akan ditampilkan pada widget.
-- group: Group yang digunakan untuk mengatur ukuran teks pada widget.
-- textAlign: Penataan teks yang akan ditampilkan pada widget.
-- textDirection: Arah teks yang akan ditampilkan pada widget.
-- textScaleFactor: Faktor skala teks yang akan ditampilkan pada widget.
-- semanticsLabel: Label semantik yang digunakan untuk mengatur ukuran teks pada widget.
-- wrapWords: Mengatur apakah teks yang akan ditampilkan pada widget akan dibungkus atau tidak.
-- locale: Digunakan untuk memilih font ketika karakter Unicode yang sama dapat dirender secara berbeda, bergantung pada lokalnya.
+- text: `Teks yang akan ditampilkan pada widget.`
+- style: `Style teks yang akan ditampilkan pada widget.`
+- maxLines: `Jumlah maksimal baris yang akan ditampilkan pada widget.`
+- overflow: `Teks yang akan ditampilkan jika melebihi jumlah maksimal baris yang ditampilkan pada widget.`
+- minFontSize: `Ukuran minimal teks yang akan ditampilkan pada widget.`
+- maxFontSize: `Ukuran maksimal teks yang akan ditampilkan pada widget.`
+- stepGranularity: `Ukuran langkah yang digunakan untuk mengatur ukuran teks pada widget.`
+- presetFontSizes: `Ukuran teks yang akan ditampilkan pada widget.`
+- group: `Group yang digunakan untuk mengatur ukuran teks pada widget.`
+- textAlign: `Penataan teks yang akan ditampilkan pada widget.`
+- textDirection: `Arah teks yang akan ditampilkan pada widget.`
+- textScaleFactor: `Faktor skala teks yang akan ditampilkan pada widget.`
+- semanticsLabel: `Label semantik yang digunakan untuk mengatur ukuran teks pada widget.`
+- wrapWords: `Mengatur apakah teks yang akan ditampilkan pada widget akan dibungkus atau tidak.`
+- locale: `Digunakan untuk memilih font ketika karakter Unicode yang sama dapat dirender secara berbeda, bergantung pada lokalnya.`
