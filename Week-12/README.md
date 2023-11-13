@@ -74,3 +74,19 @@ Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan co
 **Jawab**
 
 ![Answer Question - 4](docs/task/result-question-4.gif)
+
+### Praktikum 3: Menggunakan Completer di Future
+
+**Soal 5**
+
+Jelaskan maksud kode langkah 2 tersebut!
+
+**Jawab**
+
+Fungsi kode langkah 2 adalah untuk menginisialisasikan `Completer` untuk mengembalikan nilai hasil `Future` nantinnya.
+
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 5".
+
+**Jawab**
+
+![Answer Question - 5](docs/task/result-question-5.gif)

@@ -44,7 +44,7 @@ class _FuturePageState extends State<FuturePage> {
             ElevatedButton(
               child: const Text('GO!'),
               onPressed: () {
-                count();
+                // count();
                 // setState(() {});
                 // getData().then((value) {
                 //  result = value.body.toString().substring(0, 450);
@@ -53,6 +53,12 @@ class _FuturePageState extends State<FuturePage> {
                 //  result = 'An error has occured!';
                 //  setState(() {});
                 // });
+                getNumber().then((value) {
+                  result = value.toString();
+                  setState(() {
+                    result = value.toString();
+                  });
+                });
               },
             ),
             const Spacer(),
@@ -75,7 +81,6 @@ class _FuturePageState extends State<FuturePage> {
   }
 
   // Praktikum 2: Menggunakan await/async untuk menghindari callbacks
-
   Future<int> returnOneAsync() async {
     await Future.delayed(const Duration(seconds: 3));
     return 1;
@@ -99,5 +104,19 @@ class _FuturePageState extends State<FuturePage> {
     setState(() {
       result = total.toString();
     });
+  }
+
+  // Praktikum 3: Menggunakan Completer di Future
+  late Completer completer;
+
+  Future getNumber() {
+    completer = Completer<int>();
+    calculate();
+    return completer.future;
+  }
+
+  Future calculate() async {
+    await Future.delayed(const Duration(seconds: 5));
+    completer.complete(42);
   }
 }
