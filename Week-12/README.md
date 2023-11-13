@@ -42,3 +42,17 @@ Carilah judul buku favorit Anda di Google Books, lalu ganti ID buku pada variabe
 Kemudian cobalah akses di browser URI tersebut dengan lengkap seperti ini. Jika menampilkan data JSON, maka Anda telah berhasil. Lakukan _capture_ milik Anda dan tulis di `README` pada laporan praktikum. Lalu lakukan commit dengan pesan "**W12: Soal 2**".
 
 ![Answer Question - 2](docs/practice/questions-2.1.png)
+
+**Soal 3**
+
+Jelaskan maksud kode langkah 5 tersebut terkait `substring` dan `catchError`!
+
+**Jawab**
+
+`Substring` pada kode tersebut berfungsi untuk mengambil teks dari index 0 sampai 450. Sedangkan `catchError` berfungsi untuk menangkap error yang terjadi pada kode tersebut.
+
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "**W12: Soal 3**".
+
+**Jawab**
+
+![Answer Question - 3](docs/task/result-question-3.gif)
