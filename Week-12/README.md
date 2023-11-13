@@ -56,3 +56,21 @@ Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan co
 **Jawab**
 
 ![Answer Question - 3](docs/task/result-question-3.gif)
+
+### Praktikum 2: Menggunakan await/async untuk menghindari callbacks
+
+**Soal 4**
+
+Jelaskan maksud kode langkah 1 dan 2 tersebut!
+
+**Jawab**
+
+Pada langkah 1 menginisialisasikan 3 method dengan menggunakan fungsi `Future.delayed` dengan lama 3 detik dengan return nilai tertentu.
+
+Pada langkah ke 2 menginisialiasasikan method `count()` yang digunakan untuk memanggil ketiga method sebelumnya dan mengganti variable result dengan jumlah nilai kembali dari ketiga method tersebut.
+
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "**W12: Soal 4**".
+
+**Jawab**
+
+![Answer Question - 4](docs/task/result-question-4.gif)
