@@ -85,8 +85,22 @@ Jelaskan maksud kode langkah 2 tersebut!
 
 Fungsi kode langkah 2 adalah untuk menginisialisasikan `Completer` untuk mengembalikan nilai hasil `Future` nantinnya.
 
-Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 5".
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "**W12: Soal 5**".
 
 **Jawab**
 
 ![Answer Question - 5](docs/task/result-question-5.gif)
+
+**Soal 6**
+
+Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
+
+**Jawab**
+
+Perbedaan dari kedua kode tersebut adalah `Completer` akan mengembalikan status `Future` apakah berhasil atau tidak sedangkan `Async Await` mengembalikan hasil `Future` pada fungsi tersebut.
+
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "**W12: Soal 6**".
+
+**Jawab**
+
+![Answer Question - 6](docs/task/result-question-6.gif)
