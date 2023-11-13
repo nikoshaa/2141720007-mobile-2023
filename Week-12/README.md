@@ -30,3 +30,15 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
+
+**Soal 2**
+
+Carilah judul buku favorit Anda di Google Books, lalu ganti ID buku pada variabel `path` di kode tersebut. Caranya ambil di URL browser Anda seperti gambar berikut ini.
+
+**Jawab**
+
+![Answer Question - 2](docs/practice/questions-2.png)
+
+Kemudian cobalah akses di browser URI tersebut dengan lengkap seperti ini. Jika menampilkan data JSON, maka Anda telah berhasil. Lakukan _capture_ milik Anda dan tulis di `README` pada laporan praktikum. Lalu lakukan commit dengan pesan "**W12: Soal 2**".
+
+![Answer Question - 2](docs/practice/questions-2.1.png)
