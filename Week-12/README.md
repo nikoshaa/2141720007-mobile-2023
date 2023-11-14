@@ -104,3 +104,11 @@ Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan co
 **Jawab**
 
 ![Answer Question - 6](docs/task/result-question-6.gif)
+
+**Soal 7**
+
+Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "**W12: Soal 7"**.
+
+**Jawab**
+
+![Answer Question - 7](docs/task/result-question-7.gif)

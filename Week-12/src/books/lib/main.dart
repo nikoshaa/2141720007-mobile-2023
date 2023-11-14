@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
+import 'package:async/async.dart';
 
 void main() {
   runApp(const MyApp());
@@ -60,8 +61,8 @@ class _FuturePageState extends State<FuturePage> {
                   });
                 }).catchError((e) {
                   result = 'An error occurred';
-                  setState(() {});
                 });
+                returnFG();
               },
             ),
             const Spacer(),
@@ -127,9 +128,27 @@ class _FuturePageState extends State<FuturePage> {
     try {
       await new Future.delayed(const Duration(seconds: 5));
       completer.complete(42);
-// throw Exception();
     } catch (_) {
       completer.completeError({});
     }
+  }
+
+  // Praktikum 4: MMemanggil Future secara paralel
+
+  void returnFG() {
+    FutureGroup<int> futureGroup = FutureGroup<int>();
+    futureGroup.add(returnOneAsync());
+    futureGroup.add(returnTwoAsync());
+    futureGroup.add(returnThreeAsync());
+    futureGroup.close();
+    futureGroup.future.then((List<int> value) {
+      int total = 0;
+      for (var element in value) {
+        total += element;
+      }
+      setState(() {
+        result = total.toString();
+      });
+    });
   }
 }
