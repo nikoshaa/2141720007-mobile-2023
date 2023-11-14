@@ -154,3 +154,20 @@ Jadi, jika operasi `returnError()` berhasil, maka _'Success'_ akan ditampilkan d
 **Hasil**
 
 ![Answer Question - 10](docs/task/result-question-10.gif)
+
+### Praktikum 6: Menggunakan Future dengan StatefulWidget
+
+**Soal 11**
+
+Tambahkan **nama panggilan Anda** pada tiap properti `title` sebagai identitas pekerjaan Anda.
+
+**Jawab**
+
+```dart
+Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('Current Location Wildan')),
+      body: Center(child: Text(myPosition)),
+    );
+  }
+```
