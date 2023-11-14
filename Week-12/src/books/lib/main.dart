@@ -45,6 +45,15 @@ class _FuturePageState extends State<FuturePage> {
             ElevatedButton(
               child: const Text('GO!'),
               onPressed: () {
+                returnError().then((value) {
+                  setState(() {
+                    result = 'Success';
+                  });
+                }).catchError((onError) {
+                  setState(() {
+                    result = onError.toString();
+                  });
+                }).whenComplete(() => print('Complete'));
                 // count();
                 // setState(() {});
                 // getData().then((value) {
@@ -54,15 +63,15 @@ class _FuturePageState extends State<FuturePage> {
                 //  result = 'An error has occured!';
                 //  setState(() {});
                 // });
-                getNumber().then((value) {
-                  result = value.toString();
-                  setState(() {
-                    result = value.toString();
-                  });
-                }).catchError((e) {
-                  result = 'An error occurred';
-                });
-                returnFG();
+                // getNumber().then((value) {
+                //   result = value.toString();
+                //   setState(() {
+                //     result = value.toString();
+                //   });
+                // }).catchError((e) {
+                //   result = 'An error occurred';
+                // });
+                // returnFG();
               },
             ),
             const Spacer(),
@@ -133,8 +142,7 @@ class _FuturePageState extends State<FuturePage> {
     }
   }
 
-  // Praktikum 4: MMemanggil Future secara paralel
-
+  // Praktikum 4: Memanggil Future secara paralel
   void returnFG() {
     FutureGroup<int> futureGroup = FutureGroup<int>();
     futureGroup.add(returnOneAsync());
@@ -150,5 +158,11 @@ class _FuturePageState extends State<FuturePage> {
         result = total.toString();
       });
     });
+  }
+
+  // Praktikum 5: Menangani Respon Error pada Async Code
+  Future returnError() async {
+    await Future.delayed(const Duration(seconds: 2));
+    throw Exception('Something terrrible happened!');
   }
 }
