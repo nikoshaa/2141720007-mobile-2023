@@ -136,3 +136,21 @@ Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan co
 **Jawab**
 
 ![Answer Question - 9](docs/task/result-question-9.gif)
+
+**Soal 10**
+
+Panggil method `handleError()` tersebut di `ElevatedButton`, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+
+**Jawab**
+
+Setelah method `handleError()` dipanggil, maka outputnya akan tetap sama, pesan kesalahan _'Exception: Something terrible happened!'_ akan tetap ditampilkan. Namun kedua kode pada langkah 1 dan 4 tersebut memiliki perbedaan dalam menangani error yang terjadi.
+
+Langkah 1 menggunakan then untuk menangani hasil sukses dari `returnError()`. Kemudian menggunakan catchError untuk menangkap dan menangani kesalahan yang mungkin terjadi selama operasi asynchronous. Terakhir, menggunakan `whenComplete` untuk menentukan tindakan yang akan dilakukan setelah operasi selesai, baik dengan sukses atau dengan kesalahan.
+
+Sedangkan langkah 4 menggunakan blok `try-catch` untuk menangkap kesalahan yang mungkin terjadi selama operasi asynchronous. Dengan menggunakan try-catch ini akan mengizinkan lebih banyak kontrol atas kode yang dijalankan ketika kesalahan terjadi dan memberikan pesan kesalahan di dalam result. Jika ada kesalahan, hasil kesalahan dikirim ke dalam setState untuk pembaruan tampilan. Blok finally akan selalu dijalankan, baik operasi berhasil atau gagal.
+
+Jadi, jika operasi `returnError()` berhasil, maka _'Success'_ akan ditampilkan di dalam variabel result. Jika terjadi kesalahan, pesan kesalahan yang dihasilkan oleh Exception akan ditampilkan. Selain itu, pesan _'Complete'_ akan dicetak ke konsol dalam kedua kasus, karena blok `whenComplete` atau finally selalu dijalankan.
+
+**Hasil**
+
+![Answer Question - 10](docs/task/result-question-10.gif)
