@@ -171,3 +171,29 @@ Widget build(BuildContext context) {
     );
   }
 ```
+
+![Answer Question - 11](docs/task/result-question-11.gif)
+
+**Soal 12**
+
+- Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method `getPosition()` dengan kode `await Future.delayed(const Duration(seconds: 3));`
+
+- Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "`W12: Soal 12`".
+
+**Jawab**
+
+Jika melakukan running project pada browser, koordinat GPS tetap bisa muncul atau didapatkan.
+
+Hal ini dikarenakan Flutter web menggunakan API Geolocation yang disediakan oleh browser secara langsung. Pada Flutter web tersebut, izin untuk mengakses lokasi dikelola oleh browser, bukan pada sistem operasi (seperti Android pada platform mobile).
+
+Oleh karena itu meskipun tidak menambahkan izin secara implisit pada `AndroidManifest`, koordinat GPS tetap bisa didapatkan pada browser, namun tetap dengan izin pengguna.
+
+Berikut ini adalah hasil ketika running pada web browser
+
+![Answer Question - 12](docs/task/result-question-12-browser.gif)
+
+Sedangkan berikut ini adalah running pada device android
+
+![Answer Question - 11](docs/task/result-question-12-device.gif)

@@ -22,6 +22,7 @@ class _LocationScreenState extends State<LocationScreen> {
     });
   }
 
+  // Praktikum 6: Menggunakan Future dengan StatefulWidget
   @override
   Widget build(BuildContext context) {
     return Scaffold(
