@@ -223,3 +223,21 @@ Selain itu, UI bisa terlihat sama karena `FutureBuilder` secara otomatis mengelo
 ![Answer Question - 13](docs/task/result-question-13.gif)
 
 Seperti yang kita lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
+
+**Soal 14**
+
+- Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
+
+**Jawab**
+
+Tidak ada perbedaan UI dengan langkah sebelumnya. Hal ini dikarenakan pada langkah ini hanya menambahkan `handleError()` yang akan dijalankan ketika terdapat kesalahan.
+
+Namun karena pada langkah ini tidak ada kesalahan yang terjadi selama pemrosesan data lokasi.
+
+Oleh karena itu, bagian "_Something terrible happened!_" dari blok penanganan kesalahan tidak akan ditampilkan.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "**W12: Soal 14**".
+
+**Jawab**
+
+![Answer Question - 14](docs/task/result-question-14.gif)
