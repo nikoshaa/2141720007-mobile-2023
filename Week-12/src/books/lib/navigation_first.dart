@@ -19,7 +19,11 @@ class _NavigationFirstState extends State<NavigationFirst> {
       ),
       body: Center(
         child: ElevatedButton(
-            child: const Text('Change color'),
+            style: ElevatedButton.styleFrom(
+              primary: Colors.white,
+              foregroundColor: Colors.black,
+            ),
+            child: const Text('Change Color'),
             onPressed: () {
               _navigateAndGetColor(context);
             }),

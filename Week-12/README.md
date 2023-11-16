@@ -251,3 +251,27 @@ Oleh karena itu, bagian "_Something terrible happened!_" dari blok penanganan ke
 **Jawab**
 
 ![Answer Question - 15](docs/task/result-question-15.gif)
+
+**Soal 16**
+
+- Cobalah klik setiap button, apa yang terjadi? Mengapa demikian?
+
+**Jawab**
+
+Ketika button diklik, maka akan berubah warna sesuai dengan yang telah diatur pada `ElevatedButton()` di class `navigation_second.dart`.
+
+Hal ini dikarenakan pada terdapat fungsi `Navigation.pop()` pada setiap button yang memiliki parameter berupa context dan color yang telah diatur.
+
+Sehingga ketika setiap button diklik akan menampilkan warna yang berbeda-beda sesuai dengan isi variabel color.
+
+- Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
+
+**Jawab**
+
+Done
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "**W12: Soal 16**".
+
+**Jawab**
+
+![Answer Question - 16](docs/task/result-question-16.gif)
