@@ -196,4 +196,30 @@ Berikut ini adalah hasil ketika running pada web browser
 
 Sedangkan berikut ini adalah running pada device android
 
-![Answer Question - 11](docs/task/result-question-12-device.gif)
+![Answer Question - 12](docs/task/result-question-12-device.gif)
+
+### Praktikum 7: Manajemen Future dengan FutureBuilder
+
+**Soal 13**
+
+- Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
+
+**Jawab**
+
+Dari kedua praktikum tersebut tidak memiliki perbedaan UI. Keduanya tetap menampilkan koordinat Geolokasi dengan layout yang sama. Hal ini terjadi karena keduanya masih mengambil lokasi secara sinkron dalam blok `initState`. Sebenarnya untuk pembaruan UI terdapat perbedaan.
+
+Pada kasus pertama, `setState` digunakan setelah mendapatkan posisi untuk memperbarui variabel state `myPosition`, yang kemudian digunakan dalam UI.
+
+Sementara pada kasus kedua, position adalah objek `Future<Position>` yang digunakan dalam `FutureBuilder`. Meskipun tidak ada pemanggilan `setState` secara langsung, FutureBuilder secara otomatis mengelola pembaruan UI sesuai dengan status future yang berkaitan.
+
+Namun pada akhirnya, hasil tampilan UI terlihat sama karena keduanya memiliki penundaan atau delay yang sama, yakni 3 detik.
+
+Selain itu, UI bisa terlihat sama karena `FutureBuilder` secara otomatis mengelola pembaruan UI, bahkan tanpa pemanggilan setState langsung.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "**W12: Soal 13**".
+
+**Jawab**
+
+![Answer Question - 13](docs/task/result-question-13.gif)
+
+Seperti yang kita lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
