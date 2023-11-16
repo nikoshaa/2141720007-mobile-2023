@@ -6,6 +6,8 @@ Wildan Hafidz Mauludin
 
 2141720007
 
+TI 3H
+
 ### Praktikum 1: Mengunduh Data dari Web Service (API)
 
 **Soal 1**
