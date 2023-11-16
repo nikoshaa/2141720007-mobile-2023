@@ -241,3 +241,13 @@ Oleh karena itu, bagian "_Something terrible happened!_" dari blok penanganan ke
 **Jawab**
 
 ![Answer Question - 14](docs/task/result-question-14.gif)
+
+### Praktikum 8: Navigation route dengan Future Function
+
+**Soal 15**
+
+- Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda. Silakan ganti dengan warna tema favorit Anda.
+
+**Jawab**
+
+![Answer Question - 15](docs/task/result-question-15.gif)

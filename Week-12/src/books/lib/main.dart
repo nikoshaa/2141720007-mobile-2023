@@ -1,8 +1,9 @@
-import 'package:books/geolocation.dart';
+import 'package:books/navigation_first.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
+// ignore: depend_on_referenced_packages
 import 'package:async/async.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
           primarySwatch: Colors.blue,
           visualDensity: VisualDensity.adaptivePlatformDensity),
-      home: const LocationScreen(),
+      home: const NavigationFirst(),
     );
   }
 }
