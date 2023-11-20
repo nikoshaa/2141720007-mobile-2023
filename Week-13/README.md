@@ -137,4 +137,28 @@ Kode tersebut mendefinisikan kelas `ColorStream` yang memiliki metode `getColors
 
 **Jawab**
 
-[W13: Jawaban Soal 5]()
+[W13: Jawaban Soal 5](https://github.com/nikoshaa/2141720007-mobile-2023/commit/daaae14d4d936e6ebbab2c22e2dd1f26fbdd07e4)
+
+### Praktikum 2: Stream controllers dan sinks
+
+**Soal 6**
+
+- Jelaskan maksud kode langkah 8 dan 10 tersebut!
+
+**Jawab**
+
+- Langkah 8: pada kode ini, awalnya membuat objek `NumberStream` yang menyediakan suatu steam controller. Saat aplikasi diinisialisasi, kita menghubungkan controller tersebut ke suatu stream. Ketika stream mengeluarkan nilai baru, sebagai contoh adalah angka baru, maka tampilan akan diperbarui dengan nilai baru tersebut melalui `setState()`.
+
+- Langkah 10: pada langkah ini membuat suatu metode yang akan menambahkan angka random atau acak ke dalam stream. Metode ini menggunakan objek `Random` untuk menghasilkan angka acak. Kemudian angka acak tersebut ditambahkan ke dalam stream menggunakan metode `addNumberToSink` pada objek `numberStream`.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+**Jawab**
+
+![GIF Result - Soal 6](docs/task/result-soal-6.gif)
+
+- Lalu lakukan commit dengan pesan "**W13: Jawaban Soal 6**".
+
+**Jawab**
+
+[W13: Jawaban Soal 6]()
