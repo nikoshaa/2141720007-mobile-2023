@@ -324,4 +324,4 @@ Lalu lakukan commit dengan pesan "**W13: Jawaban Soal 13**".
 
 **Jawab**
 
-[W13: Jawaban Soal 13]()
+[W13: Jawaban Soal 13](https://github.com/nikoshaa/2141720007-mobile-2023/commit/c689a2851a3235afeb9d3f481d7dbae1044ed05d)
