@@ -216,4 +216,30 @@ Lalu lakukan commit dengan pesan "**W13: Jawaban Soal 8**".
 
 **Jawab**
 
-[W13: Jawaban Soal 8]()
+[W13: Jawaban Soal 8](https://github.com/nikoshaa/2141720007-mobile-2023/commit/86776eba47beae8f32ab45a6bbaedaf793557533)
+
+### Praktikum 4: Subscribe ke stream events
+
+**Soal 9**
+
+- Jelaskan maksud kode langkah 2, 6 dan 8 tersebut!
+
+**Jawab**
+
+- Fungsi dari langkah 2 untuk menginisialisasi `stream`.
+
+- Fungsi dari langkah 6 untuk menghentikan `streaming` menerima data.
+
+- Fungsi dari langkah 8 untuk menginisilaisasi nilai random dan menghandle `error` pada stream.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+**Jawab**
+
+![GIF Result - Soal 9](docs/task/result-soal-9.gif)
+
+Lalu lakukan commit dengan pesan "**W13: Jawaban Soal 9**".
+
+**Jawab**
+
+[W13: Jawaban Soal 9]()
