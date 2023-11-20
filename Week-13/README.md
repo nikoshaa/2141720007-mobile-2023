@@ -119,4 +119,22 @@ Kode tersebut mendefinisikan kelas `ColorStream` yang memiliki metode `getColors
 
 **Jawab**
 
-[W13: Jawaban Soal 4]()
+[W13: Jawaban Soal 4](https://github.com/nikoshaa/2141720007-mobile-2023/commit/204f44913b0d5ec82b3549ae177bfd846cf618d0)
+
+**Soal 5**
+
+- Jelaskan perbedaan menggunakan `listen` dan `await for` pada langkah 9!
+
+**Jawab**
+
+- `await for` digunakan untuk mendengarkan stream secara langsung di dalam metode `changeColor()`. Hal ini memungkinkan penggunaan `await`, sehingga proses yang ada di dalam blok perulangan akan menunggu hingga stream mengeluarkan nilai sebelum melanjutkan ke langkah berikutnya. Dalam konteks ini, setiap kali stream mengeluarkan nilai baru(warna baru), blok `setState` akan dieksekusi untuk memperbarui tampilan.
+
+- `listen` digunakan untuk menambahkan listener ke dalam stream. Dalam hal ini, setiap kali stream mengeluarkan nilai baru, callback yang ada dalam `listen` akan dipanggil. Dalam kode ini, tidak ada penggunaan `await`, sehingga pembaruan tampilan dapat terjadi secara asynchronous, dan blok `setState` akan dieksekusi setiap kali stream mengeluarkan nilai baru.
+
+- Pada intinya, `await for` digunakan ketika kita ingin menunggu setiap iterasi (stream mengeluarkan iterasi) selesai sebelum melanjutkan ke iterasai selanjutnya. Sedangkan `listen` digunakan ketika ingin menangani nilai secara asinkron, tanpa perlu menunggu satu iterasi seelsai sebelum melanjutkan ke iterasi berikutnya.
+
+- Lakukan commit hasil jawaban Soal 5 dengan pesan "**W13: Jawaban Soal 5**"
+
+**Jawab**
+
+[W13: Jawaban Soal 5]()
