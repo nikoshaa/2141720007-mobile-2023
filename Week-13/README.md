@@ -194,4 +194,26 @@ Jika terjadi error atau kesalahan selama proses iterasi atau ketika stream menge
 
 **Jawab**
 
-[W13: Jawaban Soal 7]()
+[W13: Jawaban Soal 7](https://github.com/nikoshaa/2141720007-mobile-2023/commit/454790641260c041f684932a6dc4efa4060cbd34)
+
+### Praktikum 3: Injeksi data ke streams
+
+**Soal 8**
+
+- Jelaskan maksud kode langkah 1-3 tersebut!
+
+**Jawab**
+
+Maksud dari kode langkah 1-3 digunakanan untuk merubah data pada saat `stream`. Nah pada kode tersebut number akan dikalikan `10` apabila mendapatkan data dan bernilai `-1` apabila terjadi error.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+**Jawab**
+
+![GIF Result - Soal 8](docs/task/result-soal-8.gif)
+
+Lalu lakukan commit dengan pesan "**W13: Jawaban Soal 8**".
+
+**Jawab**
+
+[W13: Jawaban Soal 8]()
