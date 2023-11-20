@@ -105,4 +105,18 @@ Kode tersebut mendefinisikan kelas `ColorStream` yang memiliki metode `getColors
 
 **Jawab**
 
-[W13: Jawaban Soal 3]()
+[W13: Jawaban Soal 3](https://github.com/nikoshaa/2141720007-mobile-2023/commit/200c62aa386e87e7ec520a149775f337a8b88d8f)
+
+**Soal 4**
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+**Jawab**
+
+![GIF Result - Soal 4](docs/task/result-soal-4.gif)
+
+- Lakukan commit hasil jawaban Soal 4 dengan pesan "**W13: Jawaban Soal 4**"
+
+**Jawab**
+
+[W13: Jawaban Soal 4]()
