@@ -274,4 +274,28 @@ Lalu lakukan commit dengan pesan "**W13: Jawaban Soal 10,11**".
 
 **Jawab**
 
-[W13: Jawaban Soal 10,11]()
+[W13: Jawaban Soal 10,11](https://github.com/nikoshaa/2141720007-mobile-2023/commit/cc479bbe2e2707ecef9cf4561174ca3b5e78e51c)
+
+### Praktikum 6: StreamBuilder
+
+**Soal 12**
+
+- Jelaskan maksud kode pada langkah 3 dan 7 !
+
+**Jawab**
+
+- Kode langkah 3 digunakan untuk membuat `stream` yang mengenerate random number.
+
+- Sedangkan kode langkah 7 digunakan untuk mengimplimentasikan `stream` menggunakan `StreamBuilder`. Jika stream mendapatkan data maka akan menampilkan `Text` dengan nilai `snapshot.data` dan jika terjadi error maka akan melakukan log.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+**Jawab**
+
+![GIF Result - Soal 12](docs/task/result-soal-12.gif)
+
+Lalu lakukan commit dengan pesan "**W13: Jawaban Soal 12**".
+
+**Jawab**
+
+[W13: Jawaban Soal 12]()
