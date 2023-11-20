@@ -161,4 +161,37 @@ Kode tersebut mendefinisikan kelas `ColorStream` yang memiliki metode `getColors
 
 **Jawab**
 
-[W13: Jawaban Soal 6]()
+[W13: Jawaban Soal 6](https://github.com/nikoshaa/2141720007-mobile-2023/commit/d9d8a37a036ee735f05bd3e615da594dca17e422)
+
+**Soal 7**
+
+- Jelaskan maksud kode langkah 13 sampai 15 tersebut!
+
+**Jawab**
+
+Kode langkah 13 sampai 15 digunakan untuk menghandle error pada `stream` melalui fungsi `addError()` pada stream.
+
+Kode `onError()` digunakan untuk menghandle error `stream`. Sedangkan `numberStream.addError()` digunakan untuk menginisialisasi error pada `stream`.
+
+Jika terjadi error atau kesalahan selama proses iterasi atau ketika stream mengembalikan nilai, maka nilai dari `lastNumber` diatur menjadi -1.
+
+![GIF Result - Soal 7](docs/task/result-soal-7.gif)
+
+- Kembalikan kode seperti semula pada Langkah 15, comment `addError()` agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
+
+**Jawab**
+
+```dart
+ void addRandomNumber() {
+    Random random = Random();
+    int myNum = random.nextInt(10);
+    numberStream.addNumberToSink(myNum);
+    // numberStream.addError();
+  }
+```
+
+- Lalu lakukan commit dengan pesan "**W13: Jawaban Soal 7**".
+
+**Jawab**
+
+[W13: Jawaban Soal 7]()
