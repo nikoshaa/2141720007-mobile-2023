@@ -242,4 +242,36 @@ Lalu lakukan commit dengan pesan "**W13: Jawaban Soal 9**".
 
 **Jawab**
 
-[W13: Jawaban Soal 9]()
+[W13: Jawaban Soal 9](https://github.com/nikoshaa/2141720007-mobile-2023/commit/e89714b10f9ce7a1d426a98c96ec586669ce694b)
+
+### Praktikum 5: Multiple stream subscriptions
+
+**Soal 10**
+
+- Jelaskan maksud kode langkah 2, 6 dan 8 tersebut!
+
+**Jawab**
+
+Error terjadi karena stream telan menghandle satu `listener` yaitu `subscription`, tetapi `subscription2` mencoba untuk listen maka akan menghasilkan error.
+
+![Error Result - Soal 10](docs/practice/practice-10.png)
+
+**Soal 11**
+
+- Jelaskan mengapa hal itu bisa terjadi?
+
+**Jawab**
+
+Hal itu terjadi karena terdapat dua listeners yang berbeda yaitu `subscription` dan `subscription2` yang menghandle stream yang sama sehingga akan `values` akan diubah oleh dua `listener` tersebut yang pada kasus ini perubahannya sama.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+**Jawab**
+
+![GIF Result - Soal 11](docs/task/result-soal-11.gif)
+
+Lalu lakukan commit dengan pesan "**W13: Jawaban Soal 10,11**".
+
+**Jawab**
+
+[W13: Jawaban Soal 10,11]()
