@@ -81,4 +81,28 @@ class ColorStream {
 
 **Jawab**
 
-[W13: Jawaban Soal 2]()
+[W13: Jawaban Soal 2](https://github.com/nikoshaa/2141720007-mobile-2023/commit/5557361e38674d71ed66dfcc38fc4fe905615f2c)
+
+**Soal 3**
+
+- Jelaskan fungsi keyword yield\* pada kode tersebut!
+
+**Jawab**
+
+Keyword `yield*` pada kode tersebut digunakan untuk menghasilkan nilai dari generator lain. Dalam hal ini, `Stream.periodic` adalah generator yang menghasilkan nilai berulang setiap detik.
+
+Keyword `yield*` mengambil nilai dari generator `Stream.periodic` dan mengembalikannya sebagai nilai dari generator yang sedang dibuat.
+
+Dalam kode tersebut, generator yang dibuat menghasilkan nilai dari generator `Stream.periodic`.
+
+- Apa maksud isi perintah kode tersebut?
+
+**Jawab**
+
+Kode tersebut mendefinisikan kelas `ColorStream` yang memiliki metode `getColors` sebagai asynchronous generator function, yang mana akan menghasilkan stream warna yang berulang setiap detik, dengan warna yang ditampilkan merupakan warna yang diambil dari daftar warna yang telah ditentukan.
+
+- Lakukan commit hasil jawaban Soal 3 dengan pesan "W13: Jawaban Soal 3"
+
+**Jawab**
+
+[W13: Jawaban Soal 3]()
