@@ -298,4 +298,30 @@ Lalu lakukan commit dengan pesan "**W13: Jawaban Soal 12**".
 
 **Jawab**
 
-[W13: Jawaban Soal 12]()
+[W13: Jawaban Soal 12](https://github.com/nikoshaa/2141720007-mobile-2023/commit/c3d8f0cdfe7991685d28b865b9648d96d4c0e933)
+
+### Praktikum 7: BLoC Pattern
+
+**Soal 13**
+
+- Jelaskan maksud praktikum ini! Dimanakah letak konsep pola BLoC-nya?
+
+**Jawab**
+
+Praktikum ini menjelaskan bagaimana menggunakan BLoC pattern pada flutter.
+
+Konsep BLoC terletak pada `random_bloc.dart` yang menghasilkan `stream` untuk random number. Pada `random_screen` digunakan variable `_bloc` untuk menginisialisasi `random_bloc` dan `StreamBuilder` untuk menghandle stream yang dihasilkan oleh `random_bloc`.
+
+Terdapat tombol refresh yang digunakan untuk menggenerate random number baru dengan mentrigger fungsi `sink` pada `_generateRandomController` pada `random_bloc.dart`.
+
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+**Jawab**
+
+![GIF Result - Soal 13](docs/task/result-soal-13.gif)
+
+Lalu lakukan commit dengan pesan "**W13: Jawaban Soal 13**".
+
+**Jawab**
+
+[W13: Jawaban Soal 13]()
